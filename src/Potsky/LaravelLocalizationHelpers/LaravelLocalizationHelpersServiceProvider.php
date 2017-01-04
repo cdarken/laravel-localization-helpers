@@ -66,7 +66,3 @@ class LaravelLocalizationHelpersServiceProvider extends ServiceProvider
 	}
 
 }
-
-
-
-

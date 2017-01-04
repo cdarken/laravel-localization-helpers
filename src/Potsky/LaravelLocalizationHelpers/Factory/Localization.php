@@ -149,7 +149,7 @@ class Localization
 		if ( empty( $lang_folder_path ) )
 		{
 			$paths = array(
-				app_path() . DIRECTORY_SEPARATOR . 'lang' ,
+				app('path') . DIRECTORY_SEPARATOR . 'lang' ,
 				base_path() . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR . 'lang' ,
 			);
 
@@ -203,7 +203,7 @@ class Localization
 				'%STORAGE' ,
 			) ,
 			array(
-				app_path() ,
+				app('path') ,
 				base_path() ,
 				public_path() ,
 				storage_path() ,
@@ -758,5 +758,3 @@ class Localization
 		// @codeCoverageIgnoreEnd
 	}
 }
-
-
